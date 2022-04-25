@@ -31,10 +31,10 @@ brew install avrdude
 Use then the following commands to flash the .c program into your mcu
   
 ```
-avr-gcc -Os -DF_CPU=16000000 -mmcu=atmega328p -c -o led.o led.c
-avr-gcc -o led.bin led.o
-avr-objcopy -O ihex -R .eeprom led.bin led.hex
-sudo avrdude -F -V -c arduino -p ATMEGA328P -P /dev/tty.usbserial-1D1110 -b 57600 -U flash:w:led.hex
+avr-gcc -Os -DF_CPU=16000000 -mmcu=atmega328p -c -o blink_nano.o blink_nano.c
+avr-gcc -o blink_nano.bin blink_nano.o
+avr-objcopy -O ihex -R .eeprom blink_nano.bin blink_nano.hex
+sudo avrdude -F -V -c arduino -p ATMEGA328P -P /dev/tty.usbserial-1D1110 -b 57600 -U flash:w:blink_nano.hex
 ```
 First line:
 Where -O is for optimizing
