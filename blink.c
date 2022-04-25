@@ -11,7 +11,7 @@ int main(void) {
 	
 	// set PORTB5 as an output
 	// DDRD is Port D Data Direction Register. Output is enabled with a 1
-	DDRD = DDRD | (1 << DDD2);
+	DDRD = DDRD | (1 << DDRD2);
 
 	// forever
 	while(1)
