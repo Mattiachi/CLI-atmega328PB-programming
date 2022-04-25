@@ -3,7 +3,8 @@
 
 
 // This program blinks a led wired at the pin D2 of an arduino nano
-// Use 57600 as baud rate to flash from CLI
+// Change in the Makefile the variables file_name (to match this file)
+// and the baud_rate (use 57600 for nano and 115200 for uno)
 // Author: M. Chiappalone
 // Date: April 2022
 
