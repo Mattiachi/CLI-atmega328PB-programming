@@ -3,8 +3,10 @@
 # This Makefile compiles the .c file and generates the files necessary to flash the .hex into the bootloader.
 # then it deletes the .bin and .o file
 
-# Must match with the name of the .c file
+#########################################
+# Must match with the name of the .c file 
 file_name = blink
+#########################################
 
 default:
 	avr-gcc -Os -DF_CPU=16000000 -mmcu=atmega328p -c -o $(file_name).o $(file_name).c
