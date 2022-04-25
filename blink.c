@@ -11,7 +11,7 @@ int main(void) {
 	
 	// set PORTB5 as an output
 	// DDRD is Port D Data Direction Register. Output is enabled with a 1
-	DDRD = DDRD | (1 << DDRD2);
+	DDRD |= (1 << DDRD2);
 
 	// forever
 	while(1)
@@ -19,13 +19,13 @@ int main(void) {
 
 		// set PORTD5 high
 		// PORTD is Port D data Register
-		PORTD = PORTD | (1 << PORTD2);
+		PORTD |= (1 << PORTD2);
 
 		// wait
 		_delay_ms(1000);
 
 		// unset PORTB5
-		PORTD = PORTD & ~(1 << PORTD2);
+		PORTD &= ~(1 << PORTD2);
 
 		// Wait again
 		_delay_ms(1000);
