@@ -62,3 +62,4 @@ On ios
 ls /dev/ | grep tty.usb
 ```
 Lastly is possible to compile the program and flash it at once using the command ``` make ``` after creating a file named ``` Makefile ``` containing the previous commands.
+![alt text](https://github.com/Mattiachi/CLI-atmega328PB-programming/blob/main/arduino%20nano%20schematic.png)
