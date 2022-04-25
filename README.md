@@ -40,7 +40,7 @@ First line:
 Where -O is for optimizing
 -DF_CPU clock speed
 -mmcu name of the chip you are programming
--c -o respectively name of the optimized file and file you programmed
+-c -o respectively name of the objectd file and file you programmed
 
 Second line:
 outputs the compiled file .bin
