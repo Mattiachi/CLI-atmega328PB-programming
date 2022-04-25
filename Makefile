@@ -17,4 +17,4 @@ default:
 	avr-gcc -o $(file_name).bin $(file_name).o
 	avr-objcopy -O ihex -R .eeprom $(file_name).bin $(file_name).hex
 	avrdude -F -V -c arduino -p ATMEGA328P -P /dev/tty.usbserial-1D1110 -b $(baud_rate) -U flash:w:$(file_name).hex
-	rm $(file_name).bin $(file_name).o rm$(file_name).hex
+	rm $(file_name).bin $(file_name).o $(file_name).hex
