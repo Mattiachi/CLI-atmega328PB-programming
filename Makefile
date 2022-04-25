@@ -7,8 +7,10 @@
 
 # Defining Variables
 
-file_name = blink		# Must match with the name of the .c file
-baud_rate = 57600		# Use 57600 for arduino nano, Use 115200 for arduino Uno
+# Must match with the name of the .c file
+file_name = blink_nano
+# Use 57600 for arduino nano, Use 115200 for arduino Uno
+baud_rate = 57600	
 
 default:
 	avr-gcc -Os -DF_CPU=16000000 -mmcu=atmega328p -c -o $(file_name).o $(file_name).c
