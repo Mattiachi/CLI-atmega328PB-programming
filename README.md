@@ -62,4 +62,17 @@ On ios
 ls /dev/ | grep tty.usb
 ```
 Lastly is possible to compile the program and flash it at once using the command ``` make ``` after creating a file named ``` Makefile ``` containing the previous commands.
-![alt text](https://github.com/Mattiachi/CLI-atmega328PB-programming/blob/main/arduino%20nano%20schematic.png)
+
+
+Code understanding and registers
+This is the schematic for the arduino nano. If we want to use the pin D2 we have to refer to the PD2 or Port D pin 2.
+
+![alt text](https://github.com/Mattiachi/CLI-atmega328PB-programming/blob/main/images/arduino%20nano%20schematic.png)
+  
+In order to set PD2 as an output we have to set a bit high on the register "Data Direction Register D".
+
+![alt text](https://github.com/Mattiachi/CLI-atmega328PB-programming/blob/main/images/DDRD.png)
+ 
+In order to pull the PD2 to a high or low logical value we have to set a 1 or 0 on the register "Port D data register"
+
+![alt text](https://github.com/Mattiachi/CLI-atmega328PB-programming/blob/main/images/PORTD.png)
