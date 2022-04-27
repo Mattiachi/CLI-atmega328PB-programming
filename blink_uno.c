@@ -11,15 +11,15 @@
 int main(void) {
 	
 	// set PORTB5 as an output
-	// DDRD is Port D Data Direction Register. Output is enabled with a 1
+	// DDRB is Port B Data Direction Register. Output is enabled with a 1
 	DDRB |= (1 << DDB5);
 
 	// forever
 	while(1)
 	{
 
-		// set PORTD5 high
-		// PORTD is Port D data Register
+		// set PORTB5 high
+		// PORTB is Port B data Register
 		PORTB |= (1 << PORTB5);
 
 		// wait
